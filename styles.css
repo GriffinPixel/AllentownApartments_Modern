@@ -432,20 +432,30 @@ a:hover {
 }
 
 @media only screen and (max-width: 575px) {
+    h1 {
+        font-size: 1.5rem;
+    }
     .container {
         padding: 0 0.9375rem;
     }
     .container-title {
-        display: block;
-        text-align: center;
         margin: 1rem auto 1.25rem;
     }
-    h1 {
-        font-size: 1.625rem;
+    .GriffinPixel {
+        width: 48px;
+        margin-right: 0;
+        margin-bottom: -0.75rem;
+        margin-left: -0.625rem;
+    }
+    .griffinpixel-index-title {
+        height: 16.8px;
+    }
+    .apartment-list-details {
+        font-size: .9375rem;
     }
     .apartment-list-detail {
         flex-direction: column;
-        /* margin: 0.75rem 0; */
+        margin: 0.5rem 0;
     }
     .apartment-list-detail-title {
         margin-right: 0;
@@ -454,13 +464,10 @@ a:hover {
     .apartment-list-detail-desc {
         width: 100%;
     }
-    .GriffinPixel {
-        width: 50px;
-        margin-right: 0;
+    .apartment-list-images {
+        margin-top: 1rem;
     }
-    .griffinpixel-index-title {
-        height: 16.8px;
-    }
+
     .index  {
         margin-bottom: 1.5rem;
     }
@@ -471,7 +478,7 @@ a:hover {
         font-size: 1.125rem;
     }
     .index-item {
-        /* display: block; */
+        margin: 0.2rem 0.875rem 0.1rem 0;
     }
     .index-item a {
         font-size: .9375rem;

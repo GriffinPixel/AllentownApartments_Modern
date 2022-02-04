@@ -49,6 +49,17 @@ a:hover {
     /* margin-bottom: -1.125rem; */
     /* margin-bottom: -0.5rem; */
     margin-left: -1.125rem;
+    transition: all .3s ease;
+}
+.GriffinPixel:hover {
+    width: 76px;
+    margin-bottom: 0.375rem;
+}
+.index-home-icon {
+    cursor: pointer;
+}
+.index-home-icon:hover {
+    background-color: transparent;
 }
 .index-title-wrapper {
     align-items: center;

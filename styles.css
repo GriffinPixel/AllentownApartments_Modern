@@ -46,8 +46,8 @@ a:hover {
 .GriffinPixel {
     width: 82px;
     height: auto;
-    margin-bottom: -1.125rem;
-    margin-bottom: -0.5rem;
+    /* margin-bottom: -1.125rem; */
+    /* margin-bottom: -0.5rem; */
     margin-left: -1.125rem;
 }
 .index-title-wrapper {
@@ -72,10 +72,6 @@ a:hover {
     background-color: #5b5a63;
     background-color: #8e8ea1;
     background-color: rgb(142 142 161 / 50%);
-    /* background-color: transparent; */
-    /* background-color: rgb(142 142 161 / 100%); */
-    /* background-color: #cdcdcd; */
-    /* background-color: rgb(96 124 243 / 20%); */
     padding: 6px 1px;
     border-radius: 6px;
     display: flex;
@@ -96,7 +92,7 @@ a:hover {
 }
 .container {
     padding: 1.5rem 1.5rem 0;
-    padding: 2rem 1.5rem 0.125rem;
+    padding: 1.75rem 1.5rem 0.125rem;
     display: flex;
 }
 .container-title {
@@ -313,7 +309,7 @@ a:hover {
         font-size: 2.75rem;
     }
     .GriffinPixel {
-        width: 80px;
+        width: 74px;
     }
     .index {
         width: 33%;
@@ -385,11 +381,15 @@ a:hover {
 @media only screen and (max-width: 991px) {
     .GriffinPixel {
         width: 60px;
-        margin-bottom: -0.875rem;
+        /* margin-bottom: -0.875rem; */
         margin-left: -0.8rem;
     }
     h1 {
         font-size: 1.875rem;
+        line-height: .75;
+    }
+    .h1-inline {
+        font-size: 1rem;
     }
     .container {
         flex-direction: column;
@@ -445,6 +445,10 @@ a:hover {
 @media only screen and (max-width: 575px) {
     h1 {
         font-size: 1.5rem;
+        line-height: .875;
+    }
+    .h1-inline {
+        font-size: .9375rem;
     }
     .container {
         padding: 0 0.9375rem;
@@ -455,7 +459,7 @@ a:hover {
     .GriffinPixel {
         width: 48px;
         margin-right: 0;
-        margin-bottom: -0.75rem;
+        /* margin-bottom: -0.75rem; */
         margin-left: -0.625rem;
     }
     .griffinpixel-index-title {

@@ -22,8 +22,14 @@ $(window).on('resize', function() {
         $(".index-table").hide();
         $(".index-content-title").addClass("title-float");
         $(".griffinpixel-index-title").attr("src", "img/home_white.svg")
+        $(".fa-arrow-up").hide();
+        $(".fa-arrow-down").show();
+        // $(".fa-arrow-down").removedClass("rotate360");
         $(".index").click(function () { 
             $(".index-table").stop(true).slideToggle();
+            // $(".fa-arrow-down").addClass("rotate360");
+            $(".fa-arrow-up").show();
+            $(".fa-arrow-down").hide();
         });
     } else { 
         $(".index-content").removeClass("index-fixed")

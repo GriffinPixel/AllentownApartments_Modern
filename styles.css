@@ -44,6 +44,9 @@ a:hover {
     text-decoration: none;
     /* color: black; */
 }
+.index-icon {
+    display: none;
+}
 .brand {
     display: flex;
     align-items: center;
@@ -78,9 +81,6 @@ a:hover {
     float: right;
     transition: all .2s ease;
 }
-.griffinpixel-wrapper {
-    display: none;
-}
 .griffinpixel-icon {
     background-color: white;
     background-color: rgb(255 255 255 / 40%);
@@ -93,9 +93,6 @@ a:hover {
     display: flex;
     align-items: center;
     /* box-shadow: 2px 4px 10px rgb(0 0 0 / 20%); */
-}
-.home-icon {
-
 }
 .griffinpixel-index-title {
     width: 32px;
@@ -351,6 +348,10 @@ a:hover {
 .index-fixed .index-content-title {
     background-color: black;
     box-shadow: none;
+        box-shadow: 0 4px 20px black,
+        0 4px 20px black,
+        /* 0 4px 20px black, */
+        0 4px 20px black;
     color: white;
 }
 .index-fixed .index-content-footer {
@@ -368,15 +369,9 @@ a:hover {
 .index-fixed .index-table .index-item a {
     color: white;
 }
-/* .title-float {
-    transition: all .2s ease;
-} */
-/* .height-0 {
-    height: 0;
+.rotate360 {
+    transform: rotate(180);
 }
-.height-100 {
-    height: 100%;
-} */
 
 @media only screen and (max-width: 1200px) {
     h1 {
@@ -457,6 +452,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 991px) {
+    .home-icon {
+        display: none;
+    }
+    .index-icon {
+        display: none;
+        color: white;
+    }
     .GriffinPixel {
         width: 60px;
         margin-left: -0.8rem;

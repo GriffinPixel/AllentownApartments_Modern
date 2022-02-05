@@ -34,7 +34,7 @@ ul, ol {
 a {
     color: black;
     text-decoration: underline;
-    padding: 0 0.125rem;
+    /* padding: 0 0.125rem; */
     border-radius: 3px;
     transition: all .15s ease;
 }
@@ -188,9 +188,9 @@ a:hover {
 .index-item a:hover {
     background-color: black;
     color: white;
-    /* background-color: transparent;
+    background-color: transparent;
     color: black;
-    text-decoration: underline; */
+    text-decoration: underline;
 }
 .index-content-footer {
     height: 15px;

@@ -318,6 +318,18 @@ a:hover {
 .back-to-top:hover a {
     color: white;
 }
+.credits {
+    padding-bottom: 1.375rem;
+}
+.credits p {
+    font-size: .75rem;
+    text-align: center;
+    margin: 0;
+}
+.credits p.creator {
+    font-size: .8rem;
+    margin-bottom: .25rem;
+}
 
 @media only screen and (max-width: 1200px) {
     h1 {

@@ -22,7 +22,7 @@ $(window).on('resize', function() {
         $(".index-table").hide();
         $(".index-content-title").addClass("title-float");
         // $(".griffinpixel-index-title").attr("src", "img/home_white.svg")
-        $(".index-content").on("click", function () { 
+        $(".index-content").click(function () { 
             $(".index-table").stop(true).slideToggle();
         });
     } else { 

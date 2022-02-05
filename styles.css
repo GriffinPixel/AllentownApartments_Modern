@@ -44,6 +44,10 @@ a:hover {
     text-decoration: none;
     /* color: black; */
 }
+.brand {
+    display: flex;
+    align-items: center;
+}
 .GriffinPixel {
     width: 82px;
     height: auto;
@@ -338,6 +342,10 @@ a:hover {
     .GriffinPixel {
         width: 74px;
     }
+    .GriffinPixel:hover {
+        width: 70px;
+        margin-bottom: 0.25rem;
+    }
     .index {
         width: 33%;
     }
@@ -408,8 +416,11 @@ a:hover {
 @media only screen and (max-width: 991px) {
     .GriffinPixel {
         width: 60px;
-        /* margin-bottom: -0.875rem; */
         margin-left: -0.8rem;
+    }
+    .GriffinPixel:hover {
+        width: 60px;
+        margin-bottom: 0;
     }
     h1 {
         font-size: 1.875rem;
@@ -438,10 +449,7 @@ a:hover {
         max-height: fit-content;
     }
     .index-item {
-        /* display: inline-block; */
-        margin: 0.125rem 0.875rem 0.125rem 0;
         margin: 0.1rem 0.875rem 0.1rem 0;
-        /* margin: 0 0.875rem 0 0; */
     }
     .index-item a {
         font-size: 1rem;
@@ -486,8 +494,10 @@ a:hover {
     .GriffinPixel {
         width: 48px;
         margin-right: 0;
-        /* margin-bottom: -0.75rem; */
         margin-left: -0.625rem;
+    }
+    .GriffinPixel:hover {
+        width: 48px;
     }
     .griffinpixel-index-title {
         height: 16.8px;

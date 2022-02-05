@@ -340,8 +340,8 @@ a:hover {
     z-index: 9999;
 }
 .index-fixed {
-    /* position: fixed; */
-    position: sticky;
+    position: fixed;
+    /* position: sticky; */
     top: 1rem;
     width: 100%;
     max-width: 672px;

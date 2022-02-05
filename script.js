@@ -21,8 +21,8 @@ $(window).on('resize', function() {
         $(".index-content").addClass("index-fixed")
         $(".index-table").hide();
         $(".index-content-title").addClass("title-float");
-        // $(".griffinpixel-index-title").attr("src", "img/home_white.svg")
-        $(".index-content").click(function () { 
+        $(".griffinpixel-index-title").attr("src", "img/home_white.svg")
+        $(".index").click(function () { 
             $(".index-table").stop(true).slideToggle();
         });
     } else { 

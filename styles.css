@@ -349,24 +349,24 @@ a:hover {
     border-radius: 18px;
 }
 .index-fixed .index-content-title {
-    /* background-color: black;
+    background-color: black;
     box-shadow: none;
-    color: white; */
+    color: white;
 }
 .index-fixed .index-content-footer {
     height: 13px;
-    /* background-color: #000000; */
-    /* box-shadow: none; */
+    background-color: #000000; 
+    box-shadow: none;
 }
 .index-content.index-fixed {
-    border-radius: 32px;
+    border-radius: 22px;
 }
 .index-fixed .index-table {
-    /* background-color: black; */
+    background-color: black;
 }
 .index-fixed .index-table .index-item,
 .index-fixed .index-table .index-item a {
-    /* color: white; */
+    color: white;
 }
 /* .title-float {
     transition: all .2s ease;
@@ -591,6 +591,7 @@ a:hover {
     }
     .index-item {
         margin: 0.2rem 0.875rem 0.1rem 0;
+        margin: 0.5rem 0.25rem;
     }
     .index-item a {
         font-size: .9375rem;

@@ -45,7 +45,7 @@ a:hover {
     /* color: black; */
 }
 .index-icon {
-    display: none;
+    display: block;
 }
 .brand {
     display: flex;
@@ -230,6 +230,7 @@ a:hover {
     font-weight: 600;
     margin-right: .5rem;
     width: 23%;
+    text-transform: capitalize;
 }
 .apartment-list-detail-title-icon {
     width: 20px;
@@ -339,11 +340,12 @@ a:hover {
 .index-fixed {
     position: fixed;
     /* position: sticky; */
-    top: 1rem;
+    bottom: 1rem;
     width: 100%;
     max-width: 672px;
     box-shadow: rgb(0 0 0 / 40%) 4px 8px 36px;
     border-radius: 18px;
+    transition: all 1s ease;
 }
 .index-fixed .index-content-title {
     background-color: black;
@@ -369,8 +371,11 @@ a:hover {
 .index-fixed .index-table .index-item a {
     color: white;
 }
-.rotate360 {
-    transform: rotate(180);
+.rotate180 {
+    transform: rotate(180deg);
+}
+.invisible {
+    visibility: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -452,28 +457,43 @@ a:hover {
 }
 
 @media only screen and (max-width: 991px) {
+    h1 {
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+    .h1-inline {
+        font-size: 1.125rem;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.375rem;
+    }
+    .fa-arrow-down {
+        display: none;
+    }
+    .index-content-title {
+        padding: 0.9rem 1.5rem 0.125rem;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+    .index-content-footer {
+        height: 0;
+    }
     .home-icon {
         display: none;
     }
     .index-icon {
         display: none;
-        color: white;
+        /* color: white; */
     }
     .GriffinPixel {
-        width: 60px;
+        width: 68px;
+        margin-top: 0.625rem;
         margin-left: -0.8rem;
     }
-    .GriffinPixel:hover {
+    /* .GriffinPixel:hover {
         width: 60px;
         margin-bottom: 0;
-    }
-    h1 {
-        font-size: 1.875rem;
-        line-height: .75;
-    }
-    .h1-inline {
-        font-size: 1rem;
-    }
+    } */
     .container {
         flex-direction: column;
         padding: 0 1.5rem;
@@ -482,6 +502,7 @@ a:hover {
         padding: 0.875rem 1.5rem 0.5rem;
         margin: 1rem auto;
         flex-direction: row;
+        align-items: flex-start;
     }
     .index {
         width: 100%;
@@ -523,6 +544,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .GriffinPixel {
+        width: 50px;
+        margin-left: -0.8rem;
+        margin-top: -0.625rem;
+    }
     .apartment-list {
         padding: 1.5rem 1.75rem 1.75rem;
     }
@@ -540,9 +570,13 @@ a:hover {
     h1 {
         font-size: 1.5rem;
         line-height: .875;
+        font-size: 2rem;
+        line-height: 1.1;
     }
     .h1-inline {
         font-size: .9375rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
     }
     .container {
         padding: 0 0.9375rem;
@@ -551,9 +585,10 @@ a:hover {
         margin: 1rem auto 1.25rem;
     }
     .GriffinPixel {
-        width: 48px;
+        width: 46px;
         margin-right: 0;
         margin-left: -0.625rem;
+        margin-top: 0.3rem;
     }
     .GriffinPixel:hover {
         width: 48px;

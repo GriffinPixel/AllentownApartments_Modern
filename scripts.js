@@ -21,14 +21,14 @@ $(window).scroll(function () {
             // $(".index-table").fadeOut(50);
             $(".index-content-title").addClass("title-float");
 
-            $(".fa-arrow-up").show();
-            $(".fa-arrow-down").hide();
+            $(".index-icon-up").show();
+            $(".index-icon-down").hide();
             // $(".fa-arrow-right").show();
 
             $(".index").off('click').click(function () { 
             // $(".index-table").removeClass("invisible");
-                $(".fa-arrow-up").hide();
-                $(".fa-arrow-down").show();
+                $(".index-icon-up").hide();
+                $(".index-icon-down").show();
                 // $(".fa-arrow-right").show();
                 $(".index-table").stop(true).slideToggle(500);
 
@@ -43,13 +43,13 @@ $(window).scroll(function () {
             $(".index-content-footer").css("height", "14px");
             $(".index-content").removeClass("index-fixed")
             $(".index-table").hide();
-            $(".fa-arrow-up").hide();
-            $(".fa-arrow-down").show();
+            $(".index-icon-up").hide();
+            $(".index-icon-down").show();
             // $(".fa-arrow-right").show();
 
             $(".index").off('click').click(function () { 
-                $(".fa-arrow-up").show();
-                $(".fa-arrow-down").hide();
+                $(".index-icon-up").show();
+                $(".index-icon-down").hide();
                 // $(".fa-arrow-right").show();
                 $(".index-table").stop(true).slideToggle();
             });

@@ -142,6 +142,7 @@ a:hover {
     position: sticky;
     top: 1.75rem;
     margin-right: 2.5rem;
+    border-radius: 20px;
 }
 .index-content-title {
     display: flex;
@@ -311,6 +312,7 @@ a:hover {
     cursor: pointer;
     box-shadow: 4px 8px 20px rgb(0 0 0 / 10%);
     transition: all .2s ease;
+    /* display: none; */
 }
 .back-to-top:hover {
     /* bottom: 2rem; */
@@ -360,9 +362,14 @@ a:hover {
     height: 13px;
     background-color: #000000; 
     box-shadow: none;
+    box-shadow: 0 -4px 20px #000000,
+    0 -4px 20px #000000,
+    0 -4px 20px #000000,
+    0 -4px 20px #000000;
 }
 .index-content.index-fixed {
     border-radius: 22px;
+    max-height: 93.5vh !important;
 }
 .index-fixed .index-table {
     background-color: black;
@@ -476,7 +483,7 @@ a:hover {
         z-index: 1;
     }
     .index-content-footer {
-        height: 0;
+        /* height: 0; */
     }
     .home-icon {
         display: none;
@@ -682,6 +689,7 @@ a:hover {
     }
     .back-to-top-scroll {
         bottom: 11%;
+        bottom: 6rem;
     }
 
     /* ***** Animation ***** */
